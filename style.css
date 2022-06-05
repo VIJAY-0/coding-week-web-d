@@ -1,0 +1,95 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+#abt
+{
+    text-decoration: none;
+}
+.bar
+{
+    position :absolute;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    width: 100vw;
+    height: 40px;
+
+}
+.bar .about
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+    padding: 4px 10px;
+    transition:0.35s;
+
+}
+
+.bar .about:hover
+{
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.401);
+
+}
+
+
+.top
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height:45vh;
+    background-image:url("back5.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mainTxt
+{
+position:absolute;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+display: flex;
+top: 4vh;
+right: 42vh;
+font-size:4vw;
+}
+
+#search
+{
+    padding: 4px 25px;
+    font-size: 30px;
+    font-family: FontAwesome;
+    color: rgba(0, 0, 0, 0.278);
+    width: 45px;
+    height:80px;
+    border: none;
+    outline: none;
+    border-radius: 80px;
+    box-shadow: 2px 2px 10px;
+    text-align: center;
+    transition: 0.4s;
+    
+    
+}
+
+#search:hover
+{  width: 50px;
+    height:80px;
+    border-radius: 80px;
+}
+#search:focus
+{
+    width: 700px;
+
+}
+
+.cont
+{
+    border: 5px solid green;
+    
+}
+

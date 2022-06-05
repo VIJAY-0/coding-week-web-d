@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="catalog.js"></script>
+    <title>Document</title>
+
+</head>
+<body>
+
+    <div class="body">
+
+        <div class="top">
+            <div class="bar">
+                <a href="about.html" id="abt">
+
+                    <span class="about">About Me</span>
+                </a>
+            </div>
+            
+            <div class="mainTxt">
+                    Search Here millions +  products
+
+            </div>
+            <input type="text" placeholder=" &#xF002;     Search here" class="inpt" id="search">
+        </div>
+
+        <section class="menucontainer" id="menu">
+            <div class="title">
+                <h2><span class="firstletter">P</span>roducts</h2>
+            </div>
+     
+            <div class="gallery">
+            </div>
+        </section>
+    </div>
+    
+
+</body>
+<script>
+        
+    document.querySelector(".inpt").addEventListener("input",filterList);
+    
+    function filterList(){
+    
+        const searchInput=document.querySelector(".inpt");
+        const filter = searchInput.value.toLowerCase();
+        const listItems=document.querySelectorAll(".pallet");
+    
+    
+        listItems.forEach((item)=>{
+            let text=item.children[1].children[0].textContent;
+            if(text.toLowerCase().includes(filter.toLowerCase()))
+            {
+                item.style.display='';
+            }
+            else
+            {
+                item.style.display='none';
+            }
+        });
+    
+    }
+    
+        </script>
+</html>
